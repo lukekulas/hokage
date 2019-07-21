@@ -39,6 +39,29 @@
 
     <br class="clear" />
 
-    <%= yield %>
+<!-- Contains actual content of site between header and footer-->
+    <div class="container">
+      <%= yield %>
+    </div>
+
+<!-- Contains the footer --> 
+    <div class="footer">
+      <div class="container">
+        <div class="row">
+          <div class="col-6">
+            <%= link_to "This isn't enough, I need more!!", "#", class: 'next-quote' %> 
+          </div>
+
+          <div class="col-6 footer-blurb">
+            Putting the Oss in bOss by <a href="https://lukecalubaquib.netlify.com/">Luke Calubaquib<a/> <br/>
+            Want to build your own Splurty Web App - <a href="https://online.bootcampspot.com">Learn how to code here</a>
+          </div>
+
+
+
+        </div>
+      </div>
+    </div>
+
   </body>
 </html>
